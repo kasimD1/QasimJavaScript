@@ -144,29 +144,83 @@
 
 
 /************************************** video no 16***********************/
-const sym=Symbol("user1");
-let jsUser={
-    email:"qasimd000@gmail.com",                                                            
-    name:"qasim",
-    "full name":"mohammad qasim",
-   [sym]:"sybol123",
-   account:"56789"
-}
-jsUser.greeting=function(){
-    console.log("hello Asalam o alaikum");
+// const sym=Symbol("user1");
+// let jsUser={
+//     email:"qasimd000@gmail.com",                                                            
+//     name:"qasim",
+//     "full name":"mohammad qasim",
+//    [sym]:"sybol123",
+//    account:"56789"
+// }
+// jsUser.greeting=function(){
+//     console.log("hello Asalam o alaikum");
 
-}
+// }
 
 // console.log(jsUser.email);
 // console.log(jsUser  ["full name"]);
 // console.log(jsUser[sym]);
 // console.log(jsUser.greeting());2
-//Object.freeze(jsUser);
-jsUser.account="89765";
-console.log(jsUser);
+// //Object.freeze(jsUser);
+// jsUser.account="89765";
+// console.log(jsUser);
 
+let tinderUser={
+    id:"123abs",
+    name:"samay",
+    isLoggedIn:"false"
+}
+//console.log(tinderUser);
 
+let regularUser={
+    
+    id:"1234",
+    email:"qasimd000@gmail.com",
+    fullName: {
+   firstName:"Qasim",
+   secondName:"Nawaz"
+    }
+}
+//console.log(regularUser.fullName.firstName);
 
-
-
-
+let obj1={
+    "1":"a",
+    "2":"b"
+}
+let obj2={
+    "1":"a",
+    "2":"b",
+    "3":"c"
+}
+// const obj3=Object.assign({},obj1,obj2);
+// console.log(obj3);
+const obj3={...obj1,...obj2};
+//console.log(obj3);
+ 
+let myArr=[
+    {
+        id:"123",
+        email:"qasim@hdsj"
+    }
+,
+    {
+        id:"123",
+        email:"qasim@hdsj"
+    }
+ ,   
+    {
+        id:"123",
+        email:"qasim@hdsj"
+    }
+,
+    {
+        id:"123",
+        email:"qasim@hdsj"
+    }
+]
+//console.log(myArr[1]);
+console.log(Object.keys(regularUser));
+console.log(Object.values(regularUser));
+console.log(
+ regularUser.hasOwnProperty("loggedin")
+);
