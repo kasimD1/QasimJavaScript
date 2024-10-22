@@ -4,7 +4,7 @@
 // let accountstate;
 // const accountId="56263563";
 // accountType="Saving account ";
- accountCity="Islamabad";
+ //accountCity="Islamabad";
 // accountTitle="Hamza Noor"
 // console.log(accountId);
 // console.table([accountId,accountCity,accountTitle,accountType,accountstate]); 
@@ -108,33 +108,33 @@
 
 /*********************************video no 13 *******************/
 //date
-let myDate=new Date();
-console.log(myDate);
-console.log(myDate.toString());
-console.log(myDate.toLocaleDateString());
-console.log(myDate.toLocaleString());
-console.log(myDate.toISOString());
+// let myDate=new Date();
+// console.log(myDate);
+// console.log(myDate.toString());
+// console.log(myDate.toLocaleDateString());
+// console.log(myDate.toLocaleString());
+// console.log(myDate.toISOString());
   
 
-let mycreatedDate=new Date(2023,2,23,5,7);
-console.log(mycreatedDate.toLocaleString());
+// let mycreatedDate=new Date(2023,2,23,5,7);
+// console.log(mycreatedDate.toLocaleString());
 
 
-let myTimeStamp=Date.now();
-console.log(myTimeStamp);
-console.log(mycreatedDate.getTime());
+// let myTimeStamp=Date.now();
+// console.log(myTimeStamp);
+// console.log(mycreatedDate.getTime());
 
-let newDate=new Date();
-console.log(newDate.getDate()+1);
-console.log(newDate.getDay()+1);
-console.log(newDate.getMonth()+1);
+// let newDate=new Date();
+// console.log(newDate.getDate()+1);
+// console.log(newDate.getDay()+1);
+// console.log(newDate.getMonth()+1);
 
-console.log(newDate.toLocaleString('default',{
-    weekday:"long",
-    month:"2-digit",
-    dayPeriod:"narrow"
+// console.log(newDate.toLocaleString('default',{
+//     weekday:"long",
+//     month:"2-digit",
+//     dayPeriod:"narrow"
     
-}));
+// }));
 
 
 
@@ -143,6 +143,27 @@ console.log(newDate.toLocaleString('default',{
 
 
 
+/************************************** video no 16***********************/
+const sym=Symbol("user1");
+let jsUser={
+    email:"qasimd000@gmail.com",                                                            
+    name:"qasim",
+    "full name":"mohammad qasim",
+   [sym]:"sybol123",
+   account:"56789"
+}
+jsUser.greeting=function(){
+    console.log("hello Asalam o alaikum");
+
+}
+
+// console.log(jsUser.email);
+// console.log(jsUser  ["full name"]);
+// console.log(jsUser[sym]);
+// console.log(jsUser.greeting());2
+//Object.freeze(jsUser);
+jsUser.account="89765";
+console.log(jsUser);
 
 
 
