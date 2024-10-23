@@ -165,62 +165,70 @@
 // jsUser.account="89765";
 // console.log(jsUser);
 
-let tinderUser={
-    id:"123abs",
-    name:"samay",
-    isLoggedIn:"false"
-}
-//console.log(tinderUser);
+// let tinderUser={
+//     id:"123abs",
+//     name:"samay",
+//     isLoggedIn:"false"
+// }
+// //console.log(tinderUser);
 
-let regularUser={
+// let regularUser={
     
-    id:"1234",
-    email:"qasimd000@gmail.com",
-    fullName: {
-   firstName:"Qasim",
-   secondName:"Nawaz"
-    }
-}
-//console.log(regularUser.fullName.firstName);
+//     id:"1234",
+//     email:"qasimd000@gmail.com",
+//     fullName: {
+//    firstName:"Qasim",
+//    secondName:"Nawaz"
+//     }
+// }
+// //console.log(regularUser.fullName.firstName);
 
-let obj1={
-    "1":"a",
-    "2":"b"
-}
-let obj2={
-    "1":"a",
-    "2":"b",
-    "3":"c"
-}
-// const obj3=Object.assign({},obj1,obj2);
-// console.log(obj3);
-const obj3={...obj1,...obj2};
-//console.log(obj3);
+// let obj1={
+//     "1":"a",
+//     "2":"b"
+// }
+// let obj2={
+//     "1":"a",
+//     "2":"b",
+//     "3":"c"
+// }
+// // const obj3=Object.assign({},obj1,obj2);
+// // console.log(obj3);
+// const obj3={...obj1,...obj2};
+// //console.log(obj3);
  
-let myArr=[
-    {
-        id:"123",
-        email:"qasim@hdsj"
-    }
-,
-    {
-        id:"123",
-        email:"qasim@hdsj"
-    }
- ,   
-    {
-        id:"123",
-        email:"qasim@hdsj"
-    }
-,
-    {
-        id:"123",
-        email:"qasim@hdsj"
-    }
-]
-//console.log(myArr[1]);
-console.log(Object.keys(regularUser));
-console.log(Object.values(regularUser));
-console.log(
- regularUser.hasOwnProperty("loggedin")
-);
+// let myArr=[
+//     {
+//         id:"123",
+//         email:"qasim@hdsj"
+//     }
+// ,
+//     {
+//         id:"123",
+//         email:"qasim@hdsj"
+//     }
+//  ,   
+//     {
+//         id:"123",
+//         email:"qasim@hdsj"
+//     }
+// ,
+//     {
+//         id:"123",
+//         email:"qasim@hdsj"
+//     }
+// ]
+// //console.log(myArr[1]);
+// console.log(Object.keys(regularUser));
+// console.log(Object.values(regularUser));
+// console.log(
+//  regularUser.hasOwnProperty("loggedin")
+// );
+
+const course ={
+    cousreName: "js aur chai",
+    courseInstructor:"harsh chaudaury",
+    price:999
+}
+const {courseInstructor:Instructor}=course;
+console.log(Instructor);
