@@ -225,10 +225,96 @@
 //  regularUser.hasOwnProperty("loggedin")
 // );
 
-const course ={
-    cousreName: "js aur chai",
-    courseInstructor:"harsh chaudaury",
-    price:999
+// const course ={
+//     cousreName: "js aur chai",
+//     courseInstructor:"harsh chaudaury",
+//     price:999
+// }
+// const {courseInstructor:Instructor}=course;
+// console.log(Instructor);
+
+// function welcome(){
+//     console.log("welcome here");
+//     console.log(this);
+// }
+// welcome();
+
+// function chai(){
+//     let username="hitesh";
+//     console.log("welcome to chai aur code ");
+//    console.log(this);
+   
+    
+// }
+// chai()
+
+// const chai=function(){
+//     let username="hitesh";
+//   console.log("welcome to chai aur code ");
+//     console.log(this);
+// }
+// chai()
+
+// const chai=()=>{
+//         let username="hitesh";
+//   console.log("welcome to chai aur code ");
+//     console.log(this);
+// }
+// chai()
+
+// const addtwo=(num1,num2)=> {return num1+num2};
+// const addtwo=(num1,num2)=> (num1+num2);
+// console.log(addtwo(55,45));
+
+// const addUsername=()=>({username:"Qasim Nawaz"})
+// console.log(addUsername());
+
+
+
+
+
+//IIFE
+//IMMEDIATE IVOKED FUNCTION EXPRESSION
+//we use these functions because we want these function from global garbage
+//or to invoked the function immediately
+// (function dbCheck(){
+//     console.log("DB CONNECTED");
+    
+// })();
+
+// ( ()=>{console.log(`DB CONNECTED TWO`);
+// })();
+
+// ( (name)=>{console.log(`DB CONNECTED WITH ${name}`);
+// })('Qasim');
+ n="naseem";
+if(true){const name="Qasim";
+let nam= "Hamza";
+na="Harsh";
+var n="Naeem";
 }
-const {courseInstructor:Instructor}=course;
-console.log(Instructor);
+console.log(na);
+//console.log(nam);
+// console.log(name);
+
+
+console.log(n);
+
+
+//falsy value
+//false 
+// 0
+//-0
+//bigint
+//empty string
+//null
+//not a number
+
+
+//true value
+//true
+//1
+//any thing in string is true value
+//{}
+//[]
+//functions
