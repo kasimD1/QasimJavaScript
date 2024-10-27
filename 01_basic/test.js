@@ -287,18 +287,18 @@
 
 // ( (name)=>{console.log(`DB CONNECTED WITH ${name}`);
 // })('Qasim');
- n="naseem";
-if(true){const name="Qasim";
-let nam= "Hamza";
-na="Harsh";
-var n="Naeem";
-}
-console.log(na);
-//console.log(nam);
-// console.log(name);
+//  n="naseem";
+// if(true){const name="Qasim";
+// let nam= "Hamza";
+// na="Harsh";
+// var n="Naeem";
+// }
+// console.log(na);
+// //console.log(nam);
+// // console.log(name);
 
 
-console.log(n);
+// console.log(n);
 
 
 //falsy value
@@ -318,3 +318,173 @@ console.log(n);
 //{}
 //[]
 //functions
+
+
+
+//NULLISH COALSING OPERATOR (??) NULL UNDEFINED
+// let val1=56??156;
+// console.log(val1);
+// let val1=null??156;
+// console.log(val1);
+
+
+//tertiary operator  (?)
+// let val1=60;
+// val1>=80?console.log(`value is greater than or equal to 80`):console.log(`value is smaller than 80`);
+ 
+// for (let index = 0; index <10; index++) {
+//     console.log(index);
+    
+    
+// }
+// let myArr=[1,2,3,5,4,3,2,1,4,5,8];
+// for (const element of myArr) {
+//     console.log(element);
+    
+// }    
+//  let myArr="my name is mqasim"
+// for (const element of myArr) {
+//     console.log(element);
+    
+// }
+
+//map
+
+// const map=new Map();
+//     map.set("IN","INDIA");
+//     map.set("USA","UNITED STATES 0F AMERICA");
+//     map.set("PAK","PAKISTAN");
+//     //console.log(map);
+//     //PRINT MAP FULLY
+//     for(const keys of map){
+//         console.log(keys);
+        
+//     }
+// //PRINT EACH OF THE THING SEPERATELY                  //**************** ***********************/
+//     for(const [keys,value] of map){
+//         console.log(keys);
+        
+//     }
+//     for(const [keys,value] of map){
+//         console.log(value);
+        
+//     }
+
+// const myObject={
+//     "game1":"NFS",
+//     "game2":"tekken 3"
+// }
+// for (const key in myObject) {
+//      console.log(key);
+//    console.log(myObject[key]);
+   
+     
+//     }
+ 
+//array
+// let programming=["cpp","swift","javascript","python"];
+// for (const key in programming) {
+//    console.log(programming[key]);
+   
+// }
+//let programming=["cpp","swift","javascript","python"];
+// programming.forEach(function(item){
+//     console.log(item);
+// })
+
+
+// programming.forEach((item)=>{console.log(item);
+// });
+
+// programming.forEach((item,index,arr)=>{console.log(item ,index,arr);
+// })
+
+
+// const myCode=[ 
+//     {
+//         "lang":"javascript",
+//         "shortcut":"js"
+//     },
+//     {
+//         "lang":"java",
+//         "shortcut":"java"
+//     },
+//     {
+//         "lang":"python",
+//         "shortcut":"py"
+//     }
+// ]
+// myCode.forEach((item)=>{console.log(item.lang);
+//     console.log(item.shortcut);
+    
+// })
+ 
+//for each loop didnot return the value
+//const mynum=[1,2,3,4,5,6,7,8,9,10];
+// const newNum= mynum.filter((item)=>item>4);
+// console.log(newNum);
+
+// const newNum=mynum.filter((item)=>{return item>5});
+// console.log(newNum);
+
+// const newNum=[];
+// mynum.forEach(element => {
+//     if(element>5){
+//   newNum.push(element);
+//     }
+// });
+// console.log(newNum);
+
+
+// const books = [
+//     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
+//     { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
+//     { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 },
+//     { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
+//     { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
+//     { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 },
+//     { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
+//     { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
+//     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
+//   ];
+
+// // const mybook=books.filter((bk)=>bk.genre==="Non-Fiction");
+// // console.log(mybook);
+// const mybooks=books.filter((bk)=>{
+//     return bk.publish===1999});
+// console.log(mybooks);
+
+// const num=[1,2,3,4,5,6,7,9,10];
+// const mynum=num.map((num)=>num+10);
+// console.log(mynum);
+
+// const num=[1,2,3,4,5,6,7,8,9];
+// const mynum=num.map((num)=>num*10).map((num)=>num+2);
+// console.log(mynum);
+
+
+// const mynum=[1,3,6,8];
+// const myTotal=mynum.reduce((acc,current)=>acc+current);
+// console.log(myTotal);
+
+
+const shoppingCart = [
+    {
+        itemName: "js course",
+        price: 2999
+    },
+    {
+        itemName: "py course",
+        price: 999
+    },
+    {
+        itemName: "mobile dev course",
+        price: 5999
+    },
+    {
+        itemName: "data science course",
+        price: 12999
+    },
+]
+const priceTopay=shoppingCart.reduce((acc,item)=>acc+item.price,0);
+console.log(priceTopay);
